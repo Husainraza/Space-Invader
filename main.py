@@ -146,6 +146,7 @@ while running:
                 enemyY[j] = 2000
                 game_over_text(200, 250)
                 break
+            break
         enemyX[i] += enemy_changeX[i]
         if enemyX[i] <= 0:
             enemy_changeX[i] = 5
@@ -174,6 +175,7 @@ while running:
     if bullet_state is "fire":
         fire_bullet(bulletX, bulletY)
         bulletY -= bullet_changeY
+
 
     show_score(textX, textY)
     pygame.display.update()
